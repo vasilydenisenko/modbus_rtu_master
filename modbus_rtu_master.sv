@@ -4,6 +4,13 @@
 	
 	// Modules uart_transmitter and uart_receiver are taken from
 	// https://github.com/roman-pogorelov/verlib/tree/master/ifaces/usart
+	
+	// Module modbus_crc16_calc is taken from
+	// https://github.com/ItaruKawakomo/hdl
+	
+	// Other instances are taken from 
+	// https://github.com/vasilydenisenko/hdl_primitives and
+	// https://github.com/vasilydenisenko/fsm_kernels
     
     modbus_rtu_master
 	#(
