@@ -54,7 +54,7 @@
 
 | `cs_addr` | Description
 | --------- | -----------
-| 0 	    | **PDU size register** [R/W] <br/> Valid values: 1,..., 253
+| 0 	    | **PDU size register** [R/W] <br/> Write: size of request PDU, valid values: 1,..., 253 <br/> Read: size of response PDU
 | 1 	    | **Configuration register** [R/W] <br/> [1 : 0] - Modbus RTU Transmission baud rate code: <ul><li> 0 - 9.6 kbps </li><li> 1 - 19.2 kbps </li><li> 2 - defined by BAUD_DIV_OPT1 </li><li> 3 - defined by BAUD_DIV_OPT2 </li></ul> <br/> [10 : 8] - Modbus RTU Transmission Mode <ul><li> [8] - Parity ena: 0 - disabled, 1 - enabled </li><li> [9] - Parity mode: 0 - Even, 1 - Odd </li><li> [10] - Stop bits: 0 - one, 1 - two </li></ul>
 | 2 	    | **Slave address register** [R/W] <br/> Valid values: 1,..., 247.
 | 3 	    | **Control and status register** [R/W] <br/> Write any value: request to send <br/> Read: <br/> <ul><li> [0] - Status of the response PDU: 1 - ready to process response PDU </li><li> [1] - Master status: 1 - ready to send new request </li></ul>
